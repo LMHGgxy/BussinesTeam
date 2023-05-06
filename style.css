@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+}
+.name{
+    width: 100%;
+    height: 50%;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 600%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    -webkit-animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.border{
+    box-sizing: border-box;
+    width: 30%;
+    height:2px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.log{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-family: 'PT Mono', monospace;
+    font-size: 200%;
+    -webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@media(max-width:1000px){
+    .name{
+        width: 100%;
+        font-size:400%;
+    }
+    .border{
+        width: 100%;
+    }
+    .log{
+        font-size:100%;
+    }
+}
